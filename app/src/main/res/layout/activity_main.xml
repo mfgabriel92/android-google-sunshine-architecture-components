@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:text="@string/error_message"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_width="42dp"
+        android:layout_height="42dp" />
+
+</FrameLayout>
